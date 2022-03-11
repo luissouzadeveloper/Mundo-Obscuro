@@ -1,0 +1,98 @@
+/*Reset da página*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Importação da fonte*/
+@font-face {
+    font-family: Destaque;
+    src: url(../fonts/coolvetica\ rg.otf);
+}
+
+/*Variáveis*/
+:root{
+    --font-destaque: Destaque;
+    --cor1: #ffcc00;
+    --cor2: #222222;
+    --cor3: #fff;
+}
+
+/*Geral*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+/*Cabeçalho*/
+header{
+    background-color: var(--cor1);
+    padding: 15px;
+}
+
+/*Logo do site*/
+.logo{
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+}
+
+/*Menu do site*/
+nav{
+    background-color: var(--cor2);
+    padding: 7px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav > a{
+    margin: 5px;
+    text-decoration: none;
+    color: var(--cor3);
+}
+
+nav > a:hover{
+    text-decoration: underline;
+    background-color: var(--cor1);
+    padding: 3px;
+    color: var(--cor2);
+}
+
+/*Corpo da página*/
+main{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/*Título principal*/
+.titulo-principal{
+    font-family: var(--font-destaque);
+    font-size: 35px;
+    text-align: center;
+    margin: 20px auto;
+    background-color: var(--cor1);
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px var(--cor2);
+}
+
+/*Parágrafos*/
+section > p{
+    margin: 20px auto;
+    text-align: justify;
+}
+
+/*Rodapé*/
+footer{
+    margin-top: 100px;
+    background-color: var(--cor1);
+    padding: 10px;
+}
+
+/*Texto do rodapé*/
+footer > p{
+    font-family: var(--font-destaque);
+    font-weight: bolder;
+    text-align: center;
+}

@@ -1,0 +1,249 @@
+/*Reset da página*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/*Importação da fonte*/
+@font-face {
+    font-family: Destaque;
+    src: url(../fonts/coolvetica\ rg.otf);
+}
+
+/*Variáveis*/
+:root{
+    --font-destaque: Destaque;
+    --cor1: #ffcc00;
+    --cor2: #222222;
+    --cor3: #fff;
+}
+
+/*Geral*/
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+}
+
+/*Relógio*/
+.relogio{
+    margin: 20px auto;
+    width: 40%;
+    background-color: var(--cor1);
+    color: var(--cor2);
+    padding: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 5px var(--cor2);
+    border-radius: 20px;
+}
+
+.display{
+    background-color: var(--cor2);
+    color: var(--cor3);
+    padding: 15px;
+    width: 30%;
+    margin: auto;
+    border-radius: 10px;
+    font-family: var(--font-destaque);
+    font-size: 30px;
+}
+
+/*Cabeçalho*/
+header{
+    background-color: var(--cor1);
+    padding: 15px;
+}
+
+/*Logo do site*/
+.logo{
+    margin: 0 auto;
+    display: flex;
+    align-content: center;
+}
+
+/*Menu do site*/
+nav{
+    background-color: var(--cor2);
+    padding: 7px;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav > a{
+    margin: 5px;
+    text-decoration: none;
+    color: var(--cor3);
+}
+
+nav > a:hover{
+    text-decoration: underline;
+    background-color: var(--cor1);
+    padding: 3px;
+    color: var(--cor2);
+}
+
+/*Corpo da página*/
+main{
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+/*Título principal*/
+.titulo-principal{
+    font-family: var(--font-destaque);
+    font-size: 35px;
+    text-align: center;
+    margin: 20px auto;
+    background-color: var(--cor1);
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px var(--cor2);
+}
+
+/*Subtitulo*/
+.subtitulo{
+    font-family: var(--font-destaque);
+    border-bottom: 1px solid var(--cor2);
+    margin: 20px auto;
+}
+
+/*Subtítulo de h2*/
+.subtitulo-h3{
+    font-family: var(--font-destaque);
+}
+
+/*Parágrafos*/
+section > p{
+    margin: 20px auto;
+    text-align: justify;
+}
+
+/*Link externo*/
+p > a{
+    font-weight: bolder;
+    color: black;
+}
+
+/*Quadro da imagem*/
+figure{
+    background-color: var(--cor1);
+    padding: 10px;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 2px 2px 5px var(--cor2);
+}
+
+/*Imagem*/
+figure > img{
+    width: 100%;
+    margin: 15px auto;
+
+}
+
+/*Descrição da imagem*/
+figure > figcaption{
+    text-align: center;
+    font-weight: bolder;
+    margin-top: -10px;
+}
+
+/*Conteúdo extra*/
+.extra{
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+/*Caixa do extra*/
+.cxextra{
+    background-color: var(--cor1);
+    margin: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+/*Elementos do extra*/
+.cxextra > a{
+    background-color: var(--cor2);
+    color: var(--cor3);
+    margin: 10px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+/*Rodapé*/
+footer{
+    background-color: var(--cor1);
+    padding: 10px;
+}
+
+/*Texto do rodapé*/
+footer > p{
+    font-family: var(--font-destaque);
+    font-weight: bolder;
+    text-align: center;
+}
+
+/*Adaptação em tablets*/
+@media (max-width: 800px) {
+    /*Corpo da página*/
+    main{
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 15px;
+    }
+
+    /*Quadro da imagem*/
+    figure{
+        background-color: var(--cor1);
+        padding: 15px;
+        border-radius: 20px;
+        margin: 10px;
+    }
+
+    /*Imagem*/
+    figure > img{
+        width: 100%;
+        margin: auto;
+    }   
+
+    /*Descrição da imagem*/
+    figure > figcaption{
+        text-align: center;
+        font-weight: bolder;
+        margin-top: -1px;
+    }
+}
+
+/*Adaptação para dispositivos mobile*/
+@media (max-width: 600px){
+    /*Títulos*/
+    h1, h2, h3{
+        text-align: center;
+    }
+
+    /*Relógio*/
+    .relogio{
+        margin: 0 auto;
+        width: 90%;
+        background-color: var(--cor1);
+        color: var(--cor2);
+        padding: 10px;
+        text-align: center;
+        box-shadow: 2px 2px 5px var(--cor2);
+        border-radius: 20px;
+    }
+
+    .display{
+        background-color: var(--cor2);
+        color: var(--cor3);
+        padding: 15px;
+        width: 40%;
+        margin: auto;
+        border-radius: 10px;
+        font-family: var(--font-destaque);
+        font-size: 30px;
+    }
+}
